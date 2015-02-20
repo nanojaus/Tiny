@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/*
+* Tiny v0.1
+* ---------
+*
+* Free to use under the MIT license.
+* http://opensource.org/licenses/MIT
+*/
+
+html {
+	font-size: 10px; }
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	font-size: 1.4em;
+	line-height: 1.5;
+	color: #444; 
+}
+
+
+/* fonts 
+––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 2rem;
+	font-weight: 300;
+	letter-spacing: -.1rem;
+}
+
+h1 { font-size: 4.0rem; line-height: 1.2;}
+h2 { font-size: 3.2rem; line-height: 1.2;}
+h3 { font-size: 2.4rem; line-height: 1.2;}
+h4 { font-size: 1.8rem; line-height: 1.2;}
+h5 { font-size: 1.4rem; line-height: 1.2;}
+h6 { font-size: 1.2rem; line-height: 1.2;}
+
+
+@media (min-width: 568px) {
+	h1 { font-size: 6.0rem; }
+	h2 { font-size: 4.2rem; }
+	h3 { font-size: 3.0rem; }
+	h4 { font-size: 2.6rem; }
+	h5 { font-size: 2.0rem; }
+	h6 { font-size: 1.6rem; }
+}
+
+p {
+	margin-top: 0; 
+}
+
+a {
+	color: #7ED321; 
+}
+
+a:hover {
+	color: #417505; 
+}
+
+/* tiny grid
+––––––––––––––––––––––––––––––––––––––––– */
+.container {
+	width: 100%;
+	max-width: 960px;
+	padding: 0 20px;
+	margin: 0 auto;
+	position: relative;
+}
+.column,
+.columns {
+	width: 100%;
+	float: left;
+}
+
+@media (min-width: 568px) {
+	.container {
+		width: 80%; 
+	}
+
+	.row { 
+		width: 100%; 
+		max-width: 980px; 
+		min-width: 320px; 
+		padding: 0 20px;
+		margin: 0 auto;
+	}
+	.row .row { 
+		min-width: 0; 
+		padding: 0;
+	}
+
+	.column, .columns { 
+		float: left;
+		min-height: 1px;
+		margin-left: 4%;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.column:first-child, .columns:first-child, .alpha { 
+		margin-left: 0;
+	}
+	
+	.row .one.column { width: 4.666667%; }
+	.row .one.columns { width: 4.666667%; }
+	.row .two.columns { width: 13.333333%; }
+	.row .three.columns { width: 22%; }
+	.row .four.columns { width: 30.666667%; }
+	.row .five.columns { width: 39.333333%; }
+	.row .six.columns { width: 48%; }
+	.row .seven.columns { width: 56.666667%; }
+	.row .eight.columns { width: 65.333333%; }
+	.row .nine.columns { width: 74%; }
+	.row .ten.columns { width: 82.666667%; }
+	.row .eleven.columns { width: 91.333333%; }
+	.row .twelve.columns { width: 100%; margin-left: 0;}
+
+}
+
+@media (min-width: 568px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
